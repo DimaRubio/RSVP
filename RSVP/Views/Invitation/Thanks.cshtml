@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Thanks";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Thanks</h2>
+
+<div>
+    <h1>Спасибо, @Model.Name!</h1>
+    @if (Model.WillAttend == true)
+    {
+        @:Здорово что вы придете, напитки уже в холодильнике ;)
+    }
+    else
+    {
+        @:Жаль что вы не придете, но спасибо что дали об этом знать.
+    }
+</div>
